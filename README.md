@@ -8,18 +8,18 @@
 	- <img src='./img/chrome_driver_download.png' style="width:500px;">
 	- <img src='./img/chrome_driver_download_2.png' style="width:500px;">
 	- <img src='./img/chrome_driver_download_3.png' style="width:500px;">
-	- Then, save it in this folder.
 
-- 接下來我們會需要繼續使用終端機，但是在那之前，先用下面的步驟來得到資料夾的路徑：
-	- <img src='./img/path.png' style="width:500px;">
 - 在終端機打上以下指令然後按enter
 ```
+#下面這個先執行 再執行後面那一串, 因為這邊要打密碼
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#安裝好上面那個 再執行下面這串
 brew install git
 brew install python@3.8
 git clone https://github.com/moooooser999/notion_pdf_converter.git
 cd notion_pdf_converter
+mv ~/Downloads/chromedriver .
 pip3 install tqdm
 pip3 install pyquery
 pip3 install bs4
