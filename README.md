@@ -9,7 +9,7 @@
 	- <img src='./img/chrome_driver_download_2.png' style="width:500px;">
 	- <img src='./img/chrome_driver_download_3.png' style="width:500px;">
 
-- 在終端機打上以下指令然後按enter
+- 在終端機 (Finder -> 應用程式 -> 其他 -> 終端機) 打上以下指令然後按enter
 ```
 #下面這個先執行 再執行後面那一串, 因為這邊要打密碼
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
