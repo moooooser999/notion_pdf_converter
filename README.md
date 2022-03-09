@@ -9,14 +9,17 @@
 	- <img src='./img/chrome_driver_download_2.png' style="width:500px;">
 	- <img src='./img/chrome_driver_download_3.png' style="width:500px;">
 	- Then, save it in this folder.
-- 從<a href="https://www.python.org/downloads/">這裏</a> 下載 Python3
-- 打開 應用程式 -> 其他 -> 終端機, type	`python` and press tab, 應該可以看到python3.10出現在底下
 
 - 接下來我們會需要繼續使用終端機，但是在那之前，先用下面的步驟來得到資料夾的路徑：
 	- <img src='./img/path.png' style="width:500px;">
 - 在終端機打上以下指令然後按enter
 ```
-cd (這邊貼上剛剛的路徑)
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
+brew install python@3.8
+git clone https://github.com/moooooser999/notion_pdf_converter.git
+cd notion_pdf_converter
 pip3 install tqdm
 pip3 install pyquery
 pip3 install bs4
